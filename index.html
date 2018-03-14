@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <section class="container-fluid pb-2">
+    <section class="row ">
+      <section class="col-md-12">
+        <h1>To Do List</h1>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Enter tasks to do: </label>
+            <input type="text" class="form-control" id="tasksToDo" rows="3" placeholder="Enter tasks to do...">
+            </textarea>
+          </div>
+        </form>
+      </section>
+    </section>
+    <section class="container mb-0 pb-0 list">
+      <section class="row">
+        <section class="col-md-6 toDo">
+          <section>
+            <h2>To Do</h2>
+            <ul id="toDo">
+            </ul>
+          </section>
+        </section>
+        <section class="col-md-6 done">
+          <section id="done">
+            <h2>Done</h2>
+            <ul>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <script src="js/toDoList.js"></script>
+
+</body>
+
+</html>

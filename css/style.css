@@ -1,0 +1,16 @@
+body {
+  background: #dcdedd!important;
+}
+
+.container {
+  background-color: #e5e5e6;
+}
+
+.list {
+  border: 1px solid #808680;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
