@@ -34,14 +34,29 @@
           </section>
         </section>
         <section class="col-md-6 done">
-          <section id="done">
+          <section >
             <h2>Done</h2>
-            <ul>
+            <ul id="done">
             </ul>
           </section>
         </section>
       </section>
     </section>
+    <nav class="row">
+      <section class="col-md-12 m-2 p-2">
+        <ul class="nav justify-content-center">
+          <li class="nav-item m-1 p-1">
+            <button type="button" class="btn btn-primary" onclick="clearToDoList()">Borrar Lista To Do</button>
+          </li>
+          <li class="nav-item m-1 p-1">
+            <button type="button" class="btn btn-danger" onclick="clearAll()">Borrar Todo</button>
+          </li>
+          <li class="nav-item m-1 p-1">
+            <button type="button" class="btn btn-success" onclick="clearDoneList()">Borrar Lista Done</button>
+          </li>
+        </ul>
+      </section>
+    </nav>
   </section>
 
   <script src="js/toDoList.js"></script>

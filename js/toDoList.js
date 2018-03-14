@@ -6,19 +6,15 @@ function addToDoList(e) {
     e.preventDefault();
     var task = document.getElementById('tasksToDo').value;
     if (task.trim() != "") {
-      console.log(task);
+     // console.log(task.charAt(0).toUpperCase() + string.slice(1));
       var liElement = document.createElement('li');
       var taskText = document.createTextNode(task);
       liElement.appendChild(taskText);
       liElement.classList.add('todo-element');
+      liElement.classList.add('p-1');
+      liElement.classList.add('m-1');
       liElement.addEventListener('click', changeDoneList);
       document.getElementById('toDo').appendChild(liElement);
-      // var addTask = task;
-      // console.log(addTask);
-      // var addTaskLi = document.getElementById("toDo").innerHTML = '<li>' + addTask + '</li>';
-      // //document.getElementById(toDo).appendChild(addTaskLi);
-      // console.log(addTaskLi);
-      // console.log(addTaskLi);
       document.getElementById("tasksToDo").value = "";
     }
   }
@@ -35,6 +31,21 @@ function changeDoneList(e) {
     elementClicked.classList.add('todo-element');
     document.getElementById('toDo').appendChild(elementClicked)
   }
+}
+
+function clearToDoList() {
+  var toDoList = document.getElementById('toDo');
+  toDoList.innerHTML = '';
+}
+
+function clearDoneList() {
+  var doneList = document.getElementById('done');
+  doneList.innerHTML = '';
+}
+
+function clearAll() {
+  clearToDoList();
+  clearDoneList();
 }
 
 
